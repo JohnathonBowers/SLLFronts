@@ -31,9 +31,11 @@ class SLL {
         this.head = new_node;
         return this;
     }
+    removeFront() {
+        if(!this.head) {
+            return null;
+        }
+        this.head = this.head.next;
+        return this;
+    }
 }
-
-let SLL1 = new SLL()
-SLL1.addFront(18)
-SLL1.addFront(5)
-SLL1.addFront(73)
