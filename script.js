@@ -38,4 +38,10 @@ class SLL {
         this.head = this.head.next;
         return this;
     }
+    front() {
+        if(this.head) {
+            return this.head.data;
+        }
+        return null;
+    }
 }
